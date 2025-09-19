@@ -42,3 +42,8 @@
 - Marketing Intelligence (HBSP Core Reading): stresses structured intelligence cycle (define decision problem, select research design, collect/triangulate secondary and primary data, translate into actionable insights). Emphasizes empathetic qualitative work, conjoint/perceptual mapping, and cautionary tales (New Coke) about ignoring emotional drivers.
 - Session 6 decks: reinforce lifestyle-centric storytelling (Build/Thrill/Adventure) and need for integrated marketing intelligence systems that monitor market sentiment, fraud/ethics risks, and marketing ROI dashboards.
 - Implication for project: combine Ford telemetry and secondary data with new primary research (surveys, immersive qualitative) to validate Ready Set Ford promises, capture emotional attachment, and ensure continuous feedback loops.
+
+## Recent Industry Intelligence (Sept 2025)
+- Ford Pro + ServiceTitan integration (Contractor Magazine): highlights direct pipeline between vehicle telematics and service software, reducing setup time and surfacing fuel/maintenance insights—evidence Ford is monetizing data services that align with the campaign’s capability promise.
+- Southern Company & Ford Pro managed charging pilot (CBT News): demonstrates Ford Pro Intelligence enabling demand-response savings (0.5 MW during events) while maintaining uptime, providing proof points for the Build persona and EV ROI storytelling.
+- TechXplore review of automotive Industry 4.0 skills gaps: warns that digital transformations falter without human capital investment; informs recommendations around BI governance, training, and dealer enablement.
