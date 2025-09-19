@@ -1,30 +1,28 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- `Assignment3_plan.md` – task roadmap with open action items and status checkboxes.
-- `Assignment3_memo_outline.md` – narrative flow for the executive memo and slide deck.
-- `notes/` – plain-text extracts from filings and media sources; filenames use `Pascal_Case` and include the source (e.g., `Ford_2024_Form_10-K.txt`).
-- `sources/` – canonical reference material grouped into `SEC/`, `shareholder/`, and `external/`; keep PDFs under 50 MB when possible.
-- `AGENTS.md` (this file) and `README.md` – contributor guidance and quick orientation.
+- `Assignment3_plan.md` and `Assignment3_memo_outline.md` hold the living work plan and memo blueprint. Update these first when scope or narrative shifts.
+- `notes/` contains text extracts and research syntheses. Keep filenames descriptive (`Source_Topic.txt`) and cite line numbers when referencing elsewhere.
+- `sources/` stores reference materials grouped by origin (`SEC/`, `shareholder/`, `external/`). Add URLs to the nested README each time a new document is saved.
+- Class slides and proprietary course content remain outside the repo (`class notes/`). Reference insights in `notes/research_notes.md` without copying the files in.
 
 ## Build, Test, and Development Commands
-This project is research-focused; no build pipeline exists. Use standard shell utilities for maintenance:
-- `git status` – review pending changes before staging.
-- `textutil`/`pdftotext` – convert new documents into searchable text for the `notes/` directory.
+- This project is primarily research and documentation. Standard git hygiene applies: `git status`, `git diff`, `git add`, `git commit`.
+- Use `pdftotext <file.pdf> <out.txt>` or similar tooling to generate searchable extracts before summarizing in `notes/`.
 
 ## Coding Style & Naming Conventions
-- Markdown files: wrap lines at ~100 characters, use ATX headings, and prefer bullet lists for task tracking.
-- Text extracts: retain original capitalization; add citation markers `(notes/...:line)` when referencing in other docs.
-- File naming: use descriptive titles with spaces replaced by underscores (e.g., `Introducing_Ready_Set_Ford.pdf`).
+- Markdown: use ATX headings, wrap text near 100 characters, prefer bullet lists for action items. Insert inline citations with `(notes/<file>:line)`.
+- Filenames: PascalCase words joined by underscores (`Ford_2024_Form_10-K.txt`). Avoid spaces.
+- When embedding code snippets (rare), default to fenced blocks and two-space indentation.
 
 ## Testing Guidelines
-No automated tests are defined. When adding analysis scripts later, include runnable examples (`python script.py`) and sample output in a `tests/` or `examples/` section.
+- No automated tests are defined. If analysis scripts are introduced, include self-contained usage examples under a `tests/` or `examples/` directory and document expected outputs.
 
 ## Commit & Pull Request Guidelines
-- Follow the existing “sentence case” commit pattern (`Initial research materials`). Keep commits scoped to one logical change (e.g., “Add Ready Set Ford article summary”).
-- Before committing, run `git diff` to verify only intentional files are touched, especially large PDFs.
-- Pull requests should include: purpose summary, bullet list of key changes, reference to relevant notes, and confirmation that sources were added under the correct subfolder.
+- Follow the existing sentence-case commit style (`Add industry intelligence sources and integrate insights`). Group related edits together and avoid mixing large binary updates with textual changes.
+- Run `git status` and `git diff` before committing to ensure only intentional files are staged, especially large PDFs.
+- Pull requests (if used) should summarize the objective, list key updates, link to relevant notes or sources, and mention any new documents placed under `sources/`.
 
-## Security & Configuration Tips
-- Do not commit personal API keys or credentials. Use `.env` files ignored by Git if scripts are added.
-- Enable Git LFS before pushing assets larger than 50 MB.
+## Security & Data Handling
+- Do not commit sensitive course materials, personal data, or credentials. Keep class PDFs in `class notes/` (ignored by Git) and reference insights via summaries only.
+- For files larger than 50 MB, enable Git LFS or share via alternative storage; GitHub warns on push for oversize assets.
