@@ -1,35 +1,36 @@
 # Assignment 3 – Marketing Analysis Plan
 
 ## Deliverables
-- Executive memo (1.5 spacing, ~3–4 pages) summarizing Ford’s marketing strategy evaluation, evidence-based recommendations, and BI enablement plan.
-- Presentation deck (~10 slides) highlighting key findings, data visuals, and action items for leadership.
+- Executive memo (8–10 pages, 1.5 spacing) synthesizing Ford’s marketing strategy, campaign assessment, marketing intelligence recommendations, and BI roadmap.
+- Presentation deck (~12 slides) highlighting key findings, data visuals, and decision-ready recommendations.
 
 ## Research Assets On Hand
 - 2024 Form 10-K (Ford) – `sources/SEC/Ford_2024_Form_10-K.pdf`
 - 2024 Annual Report – `sources/shareholder/Ford_2024_Annual_Report.pdf`
-- 2025 Proxy Statement (DEF 14A) – `sources/shareholder/Ford_2025_DEF14A.html`
-- External campaign coverage – USA Today, Detroit News, and Ford newsroom PDFs with text extracts in `notes/USA_Today_Ready_Set_Ford.txt`, `notes/DetroitNews_Marketing_AI.txt`, and `notes/FordNews_Introducing_Ready_Set_Ford.txt`
+- 2025 DEF 14A – `sources/shareholder/Ford_2025_DEF14A.html`
+- External campaign coverage (USA Today, Ford newsroom, Detroit News) – see `sources/external/README.md`
+- Class readings: “Marketing Intelligence” (Harvard), Session 6 decks on marketing strategy/intelligence (kept outside repo)
 - Transcribed notes and analysis log (`notes/` directory)
 
 ## Analysis Workstreams
 1. **Marketing Strategy Baseline**
-   - Extract Ford+ positioning and segment go-to-market narratives from 10-K Item 1 and recent shareholder communications.
-   - Catalogue marketing incentive levers and distribution structure impacts on pricing.
+   - Reaffirm Ford+ positioning, segment responsibilities, and Ready Set Ford objectives.
+   - Document marketing intelligence frameworks from class materials to anchor analysis (problem definition → research design → data synthesis).
 2. **Performance Diagnostics**
-   - Compare 2023 vs 2024 segment metrics (volume, revenue, EBIT) to judge strategy effectiveness by customer group.
-   - Highlight successes (Ford Pro) and pain points (Model e pricing) with charts sourced from 10-K tables.
-3. **Business Intelligence Assessment**
-   - Inventory telematics, connected services, and data platforms referenced for Ford Pro and Model e.
-   - Identify gaps where BI insights could improve product mix, pricing, or campaign targeting.
-4. **External Context Integration**
-   - Incorporate Ready Set Ford campaign insights and media commentary on marketing leadership priorities.
-   - Align external perspectives with internal performance data to validate recommendations.
+   - Compare 2023 vs 2024 segment metrics, highlighting volume/margin shifts and marketing implications.
+   - Assess incentives, pricing, and product mix effectiveness using 10-K causal factor disclosures.
+3. **Marketing Intelligence Assessment**
+   - Map available secondary data (SEC filings, syndicated sources) vs primary data gaps (customer perception, campaign resonance).
+   - Identify potential research techniques (conjoint, perceptual mapping, qualitative exploration) informed by class readings.
+4. **Business Intelligence & Data Integration**
+   - Inventory Ford’s digital data streams (Ford Pro telematics, FordPass, EV telemetry) and align with intelligence needs.
+   - Define KPIs for Build/Thrill/Adventure lifestyle pillars and propose dashboards.
 5. **Recommendations & Storytelling**
-   - Develop memo sections: Executive Summary, Marketing Approach Review, Effectiveness Analysis, BI Opportunities, Action Plan.
-   - Build complementary slide outline with visuals (segment performance chart, BI capability map, campaign timeline).
+   - Memo structure: Executive Summary, Strategic Context, Marketing Intelligence Assessment, Segment Diagnostics, BI Opportunities, Action Plan, Appendix.
+   - Slides: emphasize lifestyle storytelling, intelligence roadmap, quick wins/long-term roadmap.
 
 ## Immediate Next Actions
-- [x] Ingest external media articles and annotate key takeaways.
-- [x] Quantify marketing/advertising spend from 10-K footnotes if available.
-- [x] Draft memo skeleton referencing collected citations.
-- [ ] Begin slide wireframes once narratives are confirmed.
+- [ ] Extract key frameworks/examples from class notes into `notes/research_notes.md` (Marketing Intelligence section).
+- [ ] Deepen secondary research on marketing intelligence applications in automotive (e.g., competitor case studies, syndicated data references).
+- [ ] Outline primary research recommendations (qual vs quant) to validate Ready Set Ford positioning.
+- [ ] Begin drafting memo sections with new structure; expand slide outline accordingly.

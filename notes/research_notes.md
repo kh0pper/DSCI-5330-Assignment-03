@@ -37,3 +37,8 @@
 - USA Today – “Ford launches 'Ready, Set, Ford' campaign with biggest marketing push since 2012”: https://www.usatoday.com/story/cars/news/2025/09/13/ford-launches-marketing-campaign/86138025007/
 - Ford From the Road – “Introducing: Ready Set Ford”: https://www.fromtheroad.ford.com/us/en/articles/2025/introducing-ready-set-ford
 - The Detroit News – “Ford marketing chief talks economy, AI as automaker launches new global strategy”: https://www.detroitnews.com/story/business/autos/ford/2025/09/10/ford-marketing-chief-lisa-materazzo-ready-set-ford-strategy-campaign-advertising/86047640007/
+
+## Class Insights
+- Marketing Intelligence (HBSP Core Reading): stresses structured intelligence cycle (define decision problem, select research design, collect/triangulate secondary and primary data, translate into actionable insights). Emphasizes empathetic qualitative work, conjoint/perceptual mapping, and cautionary tales (New Coke) about ignoring emotional drivers.
+- Session 6 decks: reinforce lifestyle-centric storytelling (Build/Thrill/Adventure) and need for integrated marketing intelligence systems that monitor market sentiment, fraud/ethics risks, and marketing ROI dashboards.
+- Implication for project: combine Ford telemetry and secondary data with new primary research (surveys, immersive qualitative) to validate Ready Set Ford promises, capture emotional attachment, and ensure continuous feedback loops.
