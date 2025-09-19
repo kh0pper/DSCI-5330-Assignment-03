@@ -29,3 +29,11 @@
 1. Quantify marketing/advertising spend trends and promotional efficiency from Ford’s 10-K footnotes (and latest 10-Q once available).
 2. Map “Ready, Set, Ford” lifestyle pillars to segment KPIs (Blue, Model e, Pro) to evaluate effectiveness and identify BI signals required to monitor each pillar.
 3. Draft memo outline tying together internal performance data, campaign narrative, and BI opportunities; begin sourcing visuals for presentation deck.
+
+## Source Links
+- 2024 Form 10-K (filed Feb 6, 2025): https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/f-20241231x10k.htm
+- 2024 Annual Report (Ford investor relations): https://shareholder.ford.com/financials/annual-reports/default.aspx
+- 2025 DEF 14A (filed Mar 28, 2025): https://www.sec.gov/Archives/edgar/data/37996/000110465925029100/tm2416981-6_def14a.htm
+- USA Today – “Ford launches 'Ready, Set, Ford' campaign with biggest marketing push since 2012”: https://www.usatoday.com/story/cars/news/2025/09/13/ford-launches-marketing-campaign/86138025007/
+- Ford From the Road – “Introducing: Ready Set Ford”: https://www.fromtheroad.ford.com/us/en/articles/2025/introducing-ready-set-ford
+- The Detroit News – “Ford marketing chief talks economy, AI as automaker launches new global strategy”: https://www.detroitnews.com/story/business/autos/ford/2025/09/10/ford-marketing-chief-lisa-materazzo-ready-set-ford-strategy-campaign-advertising/86047640007/
