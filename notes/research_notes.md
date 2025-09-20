@@ -47,3 +47,7 @@
 - Ford Pro + ServiceTitan integration (Contractor Magazine): highlights direct pipeline between vehicle telematics and service software, reducing setup time and surfacing fuel/maintenance insights—evidence Ford is monetizing data services that align with the campaign’s capability promise.
 - Southern Company & Ford Pro managed charging pilot (CBT News): demonstrates Ford Pro Intelligence enabling demand-response savings (0.5 MW during events) while maintaining uptime, providing proof points for the Build persona and EV ROI storytelling.
 - TechXplore review of automotive Industry 4.0 skills gaps: warns that digital transformations falter without human capital investment; informs recommendations around BI governance, training, and dealer enablement.
+
+## Digital Signals (Sept 2025)
+- Google Trends (US): interest in "Ready Set Ford" registered its first measurable activity mid-September 2025 (latest weekly index = 1 versus a long-run average near 0), while "Ford Pro" remains consistently searched (average index ~30, peak 100).
+- Twitter/X sample (25 posts, Sept 13-19, 2025): top hashtags include #Ford, #ReadySetFord, #Mustang, #SwapYourRide, #PlanetFord; content mixes campaign excitement with dealer promotions and service feedback.

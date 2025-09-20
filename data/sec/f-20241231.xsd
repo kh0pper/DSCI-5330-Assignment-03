@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:9fac1f37-9eda-4378-a586-db34b7b28232,g:b0740277-7498-4cce-95f1-71b165e611ab-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:f="http://www.ford.com/20241231" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ford.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="f-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="f-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="f-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="f-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DOCUMENTANDENTITYINFORMATIONDocument" roleURI="http://www.ford.com/role/DOCUMENTANDENTITYINFORMATIONDocument">
+        <link:definition>0000001 - Document - DOCUMENT AND ENTITY INFORMATION Document</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDINCOMESTATEMENT" roleURI="http://www.ford.com/role/CONSOLIDATEDINCOMESTATEMENT">
+        <link:definition>9952151 - Statement - CONSOLIDATED INCOME STATEMENT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTOFCOMPREHENSIVEINCOME" roleURI="http://www.ford.com/role/CONSOLIDATEDSTATEMENTOFCOMPREHENSIVEINCOME">
+        <link:definition>9952152 - Statement - CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEET" roleURI="http://www.ford.com/role/CONSOLIDATEDBALANCESHEET">
+        <link:definition>9952153 - Statement - CONSOLIDATED BALANCE SHEET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETParenthetical" roleURI="http://www.ford.com/role/CONSOLIDATEDBALANCESHEETParenthetical">
+        <link:definition>9952154 - Statement - CONSOLIDATED BALANCE SHEET (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTOFCASHFLOWS" roleURI="http://www.ford.com/role/CONSOLIDATEDSTATEMENTOFCASHFLOWS">
+        <link:definition>9952155 - Statement - CONSOLIDATED STATEMENT OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTOFCASHFLOWSParenthetical" roleURI="http://www.ford.com/role/CONSOLIDATEDSTATEMENTOFCASHFLOWSParenthetical">
+        <link:definition>9952156 - Statement - CONSOLIDATED STATEMENT OF CASH FLOWS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTOFEQUITY" roleURI="http://www.ford.com/role/CONSOLIDATEDSTATEMENTOFEQUITY">
+        <link:definition>9952157 - Statement - CONSOLIDATED STATEMENT OF EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTOFEQUITYParenthetical" roleURI="http://www.ford.com/role/CONSOLIDATEDSTATEMENTOFEQUITYParenthetical">
+        <link:definition>9952158 - Statement - CONSOLIDATED STATEMENT OF EQUITY (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PresentationNotes" roleURI="http://www.ford.com/role/PresentationNotes">
+        <link:definition>9952159 - Disclosure - Presentation (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofAccountingPoliciesNotes" roleURI="http://www.ford.com/role/SummaryofAccountingPoliciesNotes">
+        <link:definition>9952160 - Disclosure - Summary of Accounting Policies (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NewAccountingStandardsNotes" roleURI="http://www.ford.com/role/NewAccountingStandardsNotes">
+        <link:definition>9952161 - Disclosure - New Accounting Standards (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueNotes" roleURI="http://www.ford.com/role/RevenueNotes">
+        <link:definition>9952162 - Disclosure - Revenue (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIncomeLossNotes" roleURI="http://www.ford.com/role/OtherIncomeLossNotes">
+        <link:definition>9952163 - Disclosure - Other Income (Loss) (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationNotes" roleURI="http://www.ford.com/role/ShareBasedCompensationNotes">
+        <link:definition>9952164 - Disclosure - Share-Based Compensation (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNotes" roleURI="http://www.ford.com/role/IncomeTaxesNotes">
+        <link:definition>9952165 - Disclosure - Income Taxes (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockandEarningsPerShareNotes" roleURI="http://www.ford.com/role/CapitalStockandEarningsPerShareNotes">
+        <link:definition>9952166 - Disclosure - Capital Stock and Earnings Per Share (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandMarketableSecuritiesNotes" roleURI="http://www.ford.com/role/CashCashEquivalentsandMarketableSecuritiesNotes">
+        <link:definition>9952167 - Disclosure - Cash, Cash Equivalents, and Marketable Securities (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FordCreditFinanceReceivablesandAllowanceforCreditLossesNotes" roleURI="http://www.ford.com/role/FordCreditFinanceReceivablesandAllowanceforCreditLossesNotes">
+        <link:definition>9952168 - Disclosure - Ford Credit Finance Receivables and Allowance for Credit Losses (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesNotes" roleURI="http://www.ford.com/role/InventoriesNotes">
+        <link:definition>9952169 - Disclosure - Inventories (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetInvestmentinOperatingLeasesNotes" roleURI="http://www.ford.com/role/NetInvestmentinOperatingLeasesNotes">
+        <link:definition>9952170 - Disclosure - Net Investment in Operating Leases (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetPropertyNotes" roleURI="http://www.ford.com/role/NetPropertyNotes">
+        <link:definition>9952171 - Disclosure - Net Property (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityinNetAssetsofAffiliatedCompaniesNotes" roleURI="http://www.ford.com/role/EquityinNetAssetsofAffiliatedCompaniesNotes">
+        <link:definition>9952172 - Disclosure - Equity in Net Assets of Affiliated Companies (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherInvestmentsNotes" roleURI="http://www.ford.com/role/OtherInvestmentsNotes">
+        <link:definition>9952173 - Disclosure - Other Investments (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherLiabilitiesandDeferredRevenueNotes" roleURI="http://www.ford.com/role/OtherLiabilitiesandDeferredRevenueNotes">
+        <link:definition>9952174 - Disclosure - Other Liabilities and Deferred Revenue (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsNotes" roleURI="http://www.ford.com/role/RetirementBenefitsNotes">
+        <link:definition>9952175 - Disclosure - Retirement Benefits (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseCommitmentsNotes" roleURI="http://www.ford.com/role/LeaseCommitmentsNotes">
+        <link:definition>9952176 - Disclosure - Lease Commitments (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtandCommitmentsNotes" roleURI="http://www.ford.com/role/DebtandCommitmentsNotes">
+        <link:definition>9952177 - Disclosure - Debt and Commitments (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsandHedgingActivitiesNotes" roleURI="http://www.ford.com/role/DerivativeFinancialInstrumentsandHedgingActivitiesNotes">
+        <link:definition>9952178 - Disclosure - Derivative Financial Instruments and Hedging Activities (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeSeparationandExitandDisposalActivitiesNotes" roleURI="http://www.ford.com/role/EmployeeSeparationandExitandDisposalActivitiesNotes">
+        <link:definition>9952179 - Disclosure - Employee Separation and Exit and Disposal Activities (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresNotes" roleURI="http://www.ford.com/role/AcquisitionsandDivestituresNotes">
+        <link:definition>9952180 - Disclosure - Acquisitions and Divestitures (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossNotes" roleURI="http://www.ford.com/role/AccumulatedOtherComprehensiveIncomeLossNotes">
+        <link:definition>9952181 - Disclosure - Accumulated Other Comprehensive Income/(Loss) (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesNotes" roleURI="http://www.ford.com/role/VariableInterestEntitiesNotes">
+        <link:definition>9952182 - Disclosure - Variable Interest Entities (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesNotes" roleURI="http://www.ford.com/role/CommitmentsandContingenciesNotes">
+        <link:definition>9952183 - Disclosure - Commitments and Contingencies (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationNotes" roleURI="http://www.ford.com/role/SegmentInformationNotes">
+        <link:definition>9952184 - Disclosure - Segment Information (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleofValuationandQualifyingAccountsNotes" roleURI="http://www.ford.com/role/ScheduleofValuationandQualifyingAccountsNotes">
+        <link:definition>9952185 - Disclosure - Schedule of Valuation and Qualifying Accounts (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofAccountingPoliciesPolicies" roleURI="http://www.ford.com/role/SummaryofAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Summary of Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NewAccountingStandardsAdoptionPolicies" roleURI="http://www.ford.com/role/NewAccountingStandardsAdoptionPolicies">
+        <link:definition>9955512 - Disclosure - New Accounting Standards Adoption (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionandDeferredRevenuePolicies" roleURI="http://www.ford.com/role/RevenueRecognitionandDeferredRevenuePolicies">
+        <link:definition>9955513 - Disclosure - Revenue Recognition and Deferred Revenue (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationRelatedCostsShareBasedPaymentsPolicies" roleURI="http://www.ford.com/role/CompensationRelatedCostsShareBasedPaymentsPolicies">
+        <link:definition>9955514 - Disclosure - Compensation Related Costs, Share Based Payments (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasuresandDisclosuresPolicies" roleURI="http://www.ford.com/role/FairValueMeasuresandDisclosuresPolicies">
+        <link:definition>9955515 - Disclosure - Fair Value Measures and Disclosures (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FordCreditFinanceReceivablesClassificationPolicies" roleURI="http://www.ford.com/role/FordCreditFinanceReceivablesClassificationPolicies">
+        <link:definition>9955516 - Disclosure - Ford Credit Finance Receivables Classification (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesInventoriesPolicies" roleURI="http://www.ford.com/role/InventoriesInventoriesPolicies">
+        <link:definition>9955517 - Disclosure - Inventories Inventories (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsEquityMethodandJointVenturesPolicies" roleURI="http://www.ford.com/role/InvestmentsEquityMethodandJointVenturesPolicies">
+        <link:definition>9955518 - Disclosure - Investments, Equity Method and Joint Ventures (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherInvestmentsPolicies" roleURI="http://www.ford.com/role/OtherInvestmentsPolicies">
+        <link:definition>9955519 - Disclosure - Other Investments (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseCommitmentsNarrativePolicies" roleURI="http://www.ford.com/role/LeaseCommitmentsNarrativePolicies">
+        <link:definition>9955520 - Disclosure - Lease Commitments Narrative (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtPolicies" roleURI="http://www.ford.com/role/DebtPolicies">
+        <link:definition>9955521 - Disclosure - Debt (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringandRelatedActivitiesPolicies" roleURI="http://www.ford.com/role/RestructuringandRelatedActivitiesPolicies">
+        <link:definition>9955522 - Disclosure - Restructuring and Related Activities (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PresentationTables" roleURI="http://www.ford.com/role/PresentationTables">
+        <link:definition>9955523 - Disclosure - Presentation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofAccountingPoliciesTables" roleURI="http://www.ford.com/role/SummaryofAccountingPoliciesTables">
+        <link:definition>9955524 - Disclosure - Summary of Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NewAccountingStandardsNewAccountingPronouncementsorChangeinAccountingPrincipleTables" roleURI="http://www.ford.com/role/NewAccountingStandardsNewAccountingPronouncementsorChangeinAccountingPrincipleTables">
+        <link:definition>9955525 - Disclosure - New Accounting Standards New Accounting Pronouncements or Change in Accounting Principle (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueTables" roleURI="http://www.ford.com/role/RevenueTables">
+        <link:definition>9955526 - Disclosure - Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIncomeLossTables" roleURI="http://www.ford.com/role/OtherIncomeLossTables">
+        <link:definition>9955527 - Disclosure - Other Income (Loss) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationTables" roleURI="http://www.ford.com/role/ShareBasedCompensationTables">
+        <link:definition>9955528 - Disclosure - Share-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.ford.com/role/IncomeTaxesTables">
+        <link:definition>9955529 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockandEarningsPerShareTables" roleURI="http://www.ford.com/role/CapitalStockandEarningsPerShareTables">
+        <link:definition>9955530 - Disclosure - Capital Stock and Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandMarketableSecuritiesTables" roleURI="http://www.ford.com/role/CashCashEquivalentsandMarketableSecuritiesTables">
+        <link:definition>9955531 - Disclosure - Cash, Cash Equivalents, and Marketable Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FordCreditFinanceReceivablesandAllowanceforCreditLossesTables" roleURI="http://www.ford.com/role/FordCreditFinanceReceivablesandAllowanceforCreditLossesTables">
+        <link:definition>9955532 - Disclosure - Ford Credit Finance Receivables and Allowance for Credit Losses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesTables" roleURI="http://www.ford.com/role/InventoriesTables">
+        <link:definition>9955533 - Disclosure - Inventories (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetInvestmentinOperatingLeasesTables" roleURI="http://www.ford.com/role/NetInvestmentinOperatingLeasesTables">
+        <link:definition>9955534 - Disclosure - Net Investment in Operating Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetPropertyTables" roleURI="http://www.ford.com/role/NetPropertyTables">
+        <link:definition>9955535 - Disclosure - Net Property (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityinNetAssetsofAffiliatedCompaniesTables" roleURI="http://www.ford.com/role/EquityinNetAssetsofAffiliatedCompaniesTables">
+        <link:definition>9955536 - Disclosure - Equity in Net Assets of Affiliated Companies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherInvestmentsTables" roleURI="http://www.ford.com/role/OtherInvestmentsTables">
+        <link:definition>9955537 - Disclosure - Other Investments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherLiabilitiesandDeferredRevenueTables" roleURI="http://www.ford.com/role/OtherLiabilitiesandDeferredRevenueTables">
+        <link:definition>9955538 - Disclosure - Other Liabilities and Deferred Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsTables" roleURI="http://www.ford.com/role/RetirementBenefitsTables">
+        <link:definition>9955539 - Disclosure - Retirement Benefits (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseCommitmentsTables" roleURI="http://www.ford.com/role/LeaseCommitmentsTables">
+        <link:definition>9955540 - Disclosure - Lease Commitments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtandCommitmentsTables" roleURI="http://www.ford.com/role/DebtandCommitmentsTables">
+        <link:definition>9955541 - Disclosure - Debt and Commitments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsandHedgingActivitiesTables" roleURI="http://www.ford.com/role/DerivativeFinancialInstrumentsandHedgingActivitiesTables">
+        <link:definition>9955542 - Disclosure - Derivative Financial Instruments and Hedging Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeSeparationandExitandDisposalActivitiesTables" roleURI="http://www.ford.com/role/EmployeeSeparationandExitandDisposalActivitiesTables">
+        <link:definition>9955543 - Disclosure - Employee Separation and Exit and Disposal Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossTables" roleURI="http://www.ford.com/role/AccumulatedOtherComprehensiveIncomeLossTables">
+        <link:definition>9955544 - Disclosure - Accumulated Other Comprehensive Income/(Loss) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://www.ford.com/role/CommitmentsandContingenciesTables">
+        <link:definition>9955545 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationTables" roleURI="http://www.ford.com/role/SegmentInformationTables">
+        <link:definition>9955546 - Disclosure - Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleofValuationandQualifyingAccountsTables" roleURI="http://www.ford.com/role/ScheduleofValuationandQualifyingAccountsTables">
+        <link:definition>9955547 - Disclosure - Schedule of Valuation and Qualifying Accounts (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PresentationCertainTransactionsBetweenAutomotiveandFinancialServicesDetails" roleURI="http://www.ford.com/role/PresentationCertainTransactionsBetweenAutomotiveandFinancialServicesDetails">
+        <link:definition>9955548 - Disclosure - Presentation - Certain Transactions Between Automotive and Financial Services (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofAccountingPoliciesDetails" roleURI="http://www.ford.com/role/SummaryofAccountingPoliciesDetails">
+        <link:definition>9955549 - Disclosure - Summary of Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NewAccountingStandardsAdoptionofNewAccountingStandardsDetails" roleURI="http://www.ford.com/role/NewAccountingStandardsAdoptionofNewAccountingStandardsDetails">
+        <link:definition>9955550 - Disclosure - New Accounting Standards Adoption of New Accounting Standards (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueDisaggregationofRevenuefromContractwithCustomerbyProductsandServicesDetails" roleURI="http://www.ford.com/role/RevenueDisaggregationofRevenuefromContractwithCustomerbyProductsandServicesDetails">
+        <link:definition>9955551 - Disclosure - Revenue - Disaggregation of Revenue from Contract with Customer by Products and Services (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRemainingPerformanceObligationDetails" roleURI="http://www.ford.com/role/RevenueRemainingPerformanceObligationDetails">
+        <link:definition>9955552 - Disclosure - Revenue - Remaining Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRemainingPerformanceObligationDetails_1" roleURI="http://www.ford.com/role/RevenueRemainingPerformanceObligationDetails_1">
+        <link:definition>9955552 - Disclosure - Revenue - Remaining Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIncomeandLossDetails" roleURI="http://www.ford.com/role/OtherIncomeandLossDetails">
+        <link:definition>9955553 - Disclosure - Other Income and Loss (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationDetails" roleURI="http://www.ford.com/role/ShareBasedCompensationDetails">
+        <link:definition>9955554 - Disclosure - Share-Based Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.ford.com/role/IncomeTaxesDetails">
+        <link:definition>9955555 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockandEarningsPerShareCapitalStockandEarningsPerShareNarrativeDetails" roleURI="http://www.ford.com/role/CapitalStockandEarningsPerShareCapitalStockandEarningsPerShareNarrativeDetails">
+        <link:definition>9955556 - Disclosure - Capital Stock and Earnings Per Share Capital Stock and Earnings Per Share - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockandEarningsPerShareDetails" roleURI="http://www.ford.com/role/CapitalStockandEarningsPerShareDetails">
+        <link:definition>9955557 - Disclosure - Capital Stock and Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandMarketableSecuritiesDetails" roleURI="http://www.ford.com/role/CashCashEquivalentsandMarketableSecuritiesDetails">
+        <link:definition>9955558 - Disclosure - Cash, Cash Equivalents, and Marketable Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandMarketableSecuritiesAvailableforSaleSecuritiesDetails" roleURI="http://www.ford.com/role/CashCashEquivalentsandMarketableSecuritiesAvailableforSaleSecuritiesDetails">
+        <link:definition>9955559 - Disclosure - Cash, Cash Equivalents, and Marketable Securities Available for Sale Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandMarketableSecuritiesCashCashEquivalentsandRestrictedCashDetails" roleURI="http://www.ford.com/role/CashCashEquivalentsandMarketableSecuritiesCashCashEquivalentsandRestrictedCashDetails">
+        <link:definition>9955560 - Disclosure - Cash, Cash Equivalents, and Marketable Securities Cash, Cash Equivalents, and Restricted Cash (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FordCreditFinanceReceivablesNetDetails" roleURI="http://www.ford.com/role/FordCreditFinanceReceivablesNetDetails">
+        <link:definition>9955561 - Disclosure - Ford Credit Finance Receivables Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FordCreditFinanceReceivablesFordCreditFinanceLeasesDetails" roleURI="http://www.ford.com/role/FordCreditFinanceReceivablesFordCreditFinanceLeasesDetails">
+        <link:definition>9955562 - Disclosure - Ford Credit Finance Receivables Ford Credit Finance Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FordCreditFinanceReceivablesAgingDetails" roleURI="http://www.ford.com/role/FordCreditFinanceReceivablesAgingDetails">
+        <link:definition>9955563 - Disclosure - Ford Credit Finance Receivables Aging (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FordCreditFinanceReceivablesCreditQualityDetails" roleURI="http://www.ford.com/role/FordCreditFinanceReceivablesCreditQualityDetails">
+        <link:definition>9955564 - Disclosure - Ford Credit Finance Receivables - Credit Quality (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FordCreditAllowanceforCreditLossesDetails" roleURI="http://www.ford.com/role/FordCreditAllowanceforCreditLossesDetails">
+        <link:definition>9955565 - Disclosure - Ford Credit Allowance for Credit Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesDetails" roleURI="http://www.ford.com/role/InventoriesDetails">
+        <link:definition>9955566 - Disclosure - Inventories (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetInvestmentinOperatingLeasesDetails" roleURI="http://www.ford.com/role/NetInvestmentinOperatingLeasesDetails">
+        <link:definition>9955567 - Disclosure - Net Investment in Operating Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetInvestmentinOperatingLeasesOperatingLeaseAmountsContractuallyDueDetails" roleURI="http://www.ford.com/role/NetInvestmentinOperatingLeasesOperatingLeaseAmountsContractuallyDueDetails">
+        <link:definition>9955568 - Disclosure - Net Investment in Operating Leases Operating Lease Amounts Contractually Due (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetPropertyDetails" roleURI="http://www.ford.com/role/NetPropertyDetails">
+        <link:definition>9955569 - Disclosure - Net Property (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityinNetAssetsofAffiliatedCompaniesDetails" roleURI="http://www.ford.com/role/EquityinNetAssetsofAffiliatedCompaniesDetails">
+        <link:definition>9955570 - Disclosure - Equity in Net Assets of Affiliated Companies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityinNetAssetsofAffiliatedCompaniesEquityinNetAssetsofAffiliatedCompaniesTransactionswithequitymethodinvesteesDetails" roleURI="http://www.ford.com/role/EquityinNetAssetsofAffiliatedCompaniesEquityinNetAssetsofAffiliatedCompaniesTransactionswithequitymethodinvesteesDetails">
+        <link:definition>9955571 - Disclosure - Equity in Net Assets of Affiliated Companies Equity in Net Assets of Affiliated Companies - Transactions with equity method investees (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherInvestmentsDetails" roleURI="http://www.ford.com/role/OtherInvestmentsDetails">
+        <link:definition>9955572 - Disclosure - Other Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherLiabilitiesandDeferredRevenueDetails" roleURI="http://www.ford.com/role/OtherLiabilitiesandDeferredRevenueDetails">
+        <link:definition>9955573 - Disclosure - Other Liabilities and Deferred Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsDetails" roleURI="http://www.ford.com/role/RetirementBenefitsDetails">
+        <link:definition>9955574 - Disclosure - Retirement Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsExpenseDetails" roleURI="http://www.ford.com/role/RetirementBenefitsExpenseDetails">
+        <link:definition>9955575 - Disclosure - Retirement Benefits - Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsStatusDetails" roleURI="http://www.ford.com/role/RetirementBenefitsStatusDetails">
+        <link:definition>9955576 - Disclosure - Retirement Benefits - Status (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsFairValueofPlanAssetsDetails" roleURI="http://www.ford.com/role/RetirementBenefitsFairValueofPlanAssetsDetails">
+        <link:definition>9955577 - Disclosure - Retirement Benefits - Fair Value of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsChangesinLevel3PensionBenefitPlanAssetsMeasuredatFairValueonaRecurringBasisDetails" roleURI="http://www.ford.com/role/RetirementBenefitsChangesinLevel3PensionBenefitPlanAssetsMeasuredatFairValueonaRecurringBasisDetails">
+        <link:definition>9955578 - Disclosure - Retirement Benefits - Changes in Level 3 Pension Benefit Plan Assets Measured at Fair Value on a Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseCommitmentsLeaseCommitmentsRightofUseAssetsandLiabilitiesDetails" roleURI="http://www.ford.com/role/LeaseCommitmentsLeaseCommitmentsRightofUseAssetsandLiabilitiesDetails">
+        <link:definition>9955579 - Disclosure - Lease Commitments Lease Commitments - Right-of-Use Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseCommitmentsLeaseCommitmentsContractualObligationsDetails" roleURI="http://www.ford.com/role/LeaseCommitmentsLeaseCommitmentsContractualObligationsDetails">
+        <link:definition>9955580 - Disclosure - Lease Commitments Lease Commitments - Contractual Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseCommitmentsLeaseCommitmentsSupplementalCashFlowInformationDetails" roleURI="http://www.ford.com/role/LeaseCommitmentsLeaseCommitmentsSupplementalCashFlowInformationDetails">
+        <link:definition>9955581 - Disclosure - Lease Commitments Lease Commitments - Supplemental Cash Flow Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseCommitmentsLeaseCommitmentsCostsDetails" roleURI="http://www.ford.com/role/LeaseCommitmentsLeaseCommitmentsCostsDetails">
+        <link:definition>9955582 - Disclosure - Lease Commitments Lease Commitments - Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseCommitmentsLeaseCommitmentsWeightedAverageRateandTermDetails" roleURI="http://www.ford.com/role/LeaseCommitmentsLeaseCommitmentsWeightedAverageRateandTermDetails">
+        <link:definition>9955583 - Disclosure - Lease Commitments Lease Commitments Weighted Average Rate and Term (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDebtOutstandingDetails" roleURI="http://www.ford.com/role/DebtDebtOutstandingDetails">
+        <link:definition>9955584 - Disclosure - Debt - Debt Outstanding (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtMaturitiesDetails" roleURI="http://www.ford.com/role/DebtMaturitiesDetails">
+        <link:definition>9955585 - Disclosure - Debt - Maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtPublicUnsecuredDebtSecuritiesDetails" roleURI="http://www.ford.com/role/DebtPublicUnsecuredDebtSecuritiesDetails">
+        <link:definition>9955586 - Disclosure - Debt - Public Unsecured Debt Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDOEATVMIncentiveProgramandAutomotiveCreditFacilitiesDetails" roleURI="http://www.ford.com/role/DebtDOEATVMIncentiveProgramandAutomotiveCreditFacilitiesDetails">
+        <link:definition>9955587 - Disclosure - Debt - DOE ATVM Incentive Program, and Automotive Credit Facilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FordCreditSegmentDebtDetails" roleURI="http://www.ford.com/role/FordCreditSegmentDebtDetails">
+        <link:definition>9955588 - Disclosure - Ford Credit Segment Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConvertibleDebtDetails" roleURI="http://www.ford.com/role/ConvertibleDebtDetails">
+        <link:definition>9955589 - Disclosure - Convertible Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsandHedgingActivitiesIncomeEffectofDerivativeFinancialInstrumentsDetails" roleURI="http://www.ford.com/role/DerivativeFinancialInstrumentsandHedgingActivitiesIncomeEffectofDerivativeFinancialInstrumentsDetails">
+        <link:definition>9955590 - Disclosure - Derivative Financial Instruments and Hedging Activities Income Effect of Derivative Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetEffectofDerivativeFinancialInstrumentsDetails" roleURI="http://www.ford.com/role/BalanceSheetEffectofDerivativeFinancialInstrumentsDetails">
+        <link:definition>9955591 - Disclosure - Balance Sheet Effect of Derivative Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeSeparationandExitandDisposalActivitiesDetails" roleURI="http://www.ford.com/role/EmployeeSeparationandExitandDisposalActivitiesDetails">
+        <link:definition>9955592 - Disclosure - Employee Separation and Exit and Disposal Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresDetails" roleURI="http://www.ford.com/role/AcquisitionsandDivestituresDetails">
+        <link:definition>9955593 - Disclosure - Acquisitions and Divestitures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossDetails" roleURI="http://www.ford.com/role/AccumulatedOtherComprehensiveIncomeLossDetails">
+        <link:definition>9955594 - Disclosure - Accumulated Other Comprehensive Income/(Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesVIEsofWhichWeAreNotthePrimaryBeneficiaryDetails" roleURI="http://www.ford.com/role/VariableInterestEntitiesVIEsofWhichWeAreNotthePrimaryBeneficiaryDetails">
+        <link:definition>9955595 - Disclosure - Variable Interest Entities - VIEs of Which We Are Not the Primary Beneficiary (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesDetails" roleURI="http://www.ford.com/role/CommitmentsandContingenciesDetails">
+        <link:definition>9955596 - Disclosure - Commitments and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationDetails" roleURI="http://www.ford.com/role/SegmentInformationDetails">
+        <link:definition>9955597 - Disclosure - Segment Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationGeographicInformationDetails" roleURI="http://www.ford.com/role/SegmentInformationGeographicInformationDetails">
+        <link:definition>9955598 - Disclosure - Segment Information Geographic Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleofValuationandQualifyingAccountsDetails" roleURI="http://www.ford.com/role/ScheduleofValuationandQualifyingAccountsDetails">
+        <link:definition>9955599 - Disclosure - Schedule of Valuation and Qualifying Accounts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="f_FixedRateDebtSecurityAxis" abstract="true" name="FixedRateDebtSecurityAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_FixedRateDebtSecurityDomain" abstract="true" name="FixedRateDebtSecurityDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FPRBMember" abstract="true" name="FPRBMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FPRCMember" abstract="true" name="FPRCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FPRDMember" abstract="true" name="FPRDMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_CompanyExcludingFordCreditMember" abstract="true" name="CompanyExcludingFordCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FordCreditMember" abstract="true" name="FordCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_NetInvestmentInOperatingLeaseNoncurrent" abstract="false" name="NetInvestmentInOperatingLeaseNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_S2023Q1DividendsMember" abstract="true" name="S2023Q1DividendsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_O2023Q1DividendsMember" abstract="true" name="O2023Q1DividendsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_S2024Q1DividendsMember" abstract="true" name="S2024Q1DividendsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_O2024Q1DividendsMember" abstract="true" name="O2024Q1DividendsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_O2025Q1DividendsMember" abstract="true" name="O2025Q1DividendsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_S2025Q1DividendsMember" abstract="true" name="S2025Q1DividendsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_EmployeeStockOwnershipPlanLoanTreasuryStockAndOther" abstract="false" name="EmployeeStockOwnershipPlanLoanTreasuryStockAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_AccountingStandardsIssuedButNotAdoptedAbstract" abstract="true" name="AccountingStandardsIssuedButNotAdoptedAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="f_FinanceAndLeaseIncentivesPolicyTextBlock" abstract="false" name="FinanceAndLeaseIncentivesPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_TradeNotesAndOtherAccountsReceivablePolicyPolicyTextBlock" abstract="false" name="TradeNotesAndOtherAccountsReceivablePolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_ScheduleOfRelatedPartyTransactionImpactingBalanceSheetTableTextBlock" abstract="false" name="ScheduleOfRelatedPartyTransactionImpactingBalanceSheetTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_ScheduleOfOtherCostsTableTextBlock" abstract="false" name="ScheduleOfOtherCostsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_ScheduleofFairValueandCompensationCostRestrictedStockUnitsandRestrictedStockSharesTableTextBlock" abstract="false" name="ScheduleofFairValueandCompensationCostRestrictedStockUnitsandRestrictedStockSharesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_ScheduleCashCashEquivalentsandRestrictedCashTableTextBlock" abstract="false" name="ScheduleCashCashEquivalentsandRestrictedCashTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_SalesTypeandDirectFinancingLeasesTableTextBlock" abstract="false" name="SalesTypeandDirectFinancingLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_ScheduleofOperatingLeaseExpenseTableTextBlock" abstract="false" name="ScheduleofOperatingLeaseExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_ScheduleOfDefinedBenefitPlanObligationsTableTextBlock" abstract="false" name="ScheduleOfDefinedBenefitPlanObligationsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_LeaseRightofUseAssetsandLiabilitiesTableTextBlock" abstract="false" name="LeaseRightofUseAssetsandLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_LesseeWeightedAverageTermandDiscountRateTableTextBlock" abstract="false" name="LesseeWeightedAverageTermandDiscountRateTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_AssetsAndLiabilitiesRelatedToSecuredDebtArrangementsDisclosureTextBlockTableTextBlock" abstract="false" name="AssetsAndLiabilitiesRelatedToSecuredDebtArrangementsDisclosureTextBlockTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="f_RelatedPartyTransactionFinanceReceivablesNet" abstract="false" name="RelatedPartyTransactionFinanceReceivablesNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_RelatedPartyTransactionUnearnedInterestSupplementsAndResidualSupportFromTransactionsWithRelatedParty" abstract="false" name="RelatedPartyTransactionUnearnedInterestSupplementsAndResidualSupportFromTransactionsWithRelatedParty" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_WholesaleAutoReceivableFromDealersAndLoansAndLeasesReceivableOther" abstract="false" name="WholesaleAutoReceivableFromDealersAndLoansAndLeasesReceivableOther" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_SummaryOfAccountingPoliciesTable" abstract="true" name="SummaryOfAccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_LandBenefitMember" abstract="true" name="LandBenefitMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_CapitalGrantMember" abstract="true" name="CapitalGrantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_ProductionCreditAdvancedManufacturingBatteryComponentsMember" abstract="true" name="ProductionCreditAdvancedManufacturingBatteryComponentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_GovernmentAssistanceTransactionDurationStartDateAxis" abstract="true" name="GovernmentAssistanceTransactionDurationStartDateAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_GovernmentAssistanceTransactionDurationStartDateDomain" abstract="true" name="GovernmentAssistanceTransactionDurationStartDateDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_AverageTurnoverPeriodofTradeReceivables" abstract="false" name="AverageTurnoverPeriodofTradeReceivables" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_TradeNotesAndOtherReceivablesAfterAllowanceForCreditLoss" abstract="false" name="TradeNotesAndOtherReceivablesAfterAllowanceForCreditLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_TradeNotesAndOtherReceivablesAllowanceForCreditLoss" abstract="false" name="TradeNotesAndOtherReceivablesAllowanceForCreditLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_TermAtWhichFairValueofFinanceReceivablesisMeasured" abstract="false" name="TermAtWhichFairValueofFinanceReceivablesisMeasured" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_RetailAndLeaseSupplementsAbstract" abstract="true" name="RetailAndLeaseSupplementsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="f_RelatedPartyTransactionEarnedInterestSupplementsAndResidualSupportRevenueFromTransactionsWithRelatedParty" abstract="false" name="RelatedPartyTransactionEarnedInterestSupplementsAndResidualSupportRevenueFromTransactionsWithRelatedParty" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_AmountofReductioninDepreciationExpenseOnPropertySubjectToOrHeldForLease" abstract="false" name="AmountofReductioninDepreciationExpenseOnPropertySubjectToOrHeldForLease" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_VehiclesPartsAndAccessoriesMember" abstract="true" name="VehiclesPartsAndAccessoriesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_SaleOfUsedVehiclesMember" abstract="true" name="SaleOfUsedVehiclesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_ExtendedServiceContractsMember" abstract="true" name="ExtendedServiceContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_AllSalesTypeProductsAndServicesMember" abstract="true" name="AllSalesTypeProductsAndServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_LeasingincomeMember" abstract="true" name="LeasingincomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FinancingincomeMember" abstract="true" name="FinancingincomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_InsuranceincomeMember" abstract="true" name="InsuranceincomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_ServiceAndOtherRevenueMember" abstract="true" name="ServiceAndOtherRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_VehicleRelatedDesignAndTestingServicesMember" abstract="true" name="VehicleRelatedDesignAndTestingServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_RevenuePerformanceObligationPaymentTerms" abstract="false" name="RevenuePerformanceObligationPaymentTerms" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_CashEquivalentsMarketableSecuritiesAndOtherInvestmentsMember" abstract="true" name="CashEquivalentsMarketableSecuritiesAndOtherInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_RivianMember" abstract="true" name="RivianMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_UnrecognizedTaxBenefitsInterestIncome" abstract="false" name="UnrecognizedTaxBenefitsInterestIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_GainsLossesOnChangesInInvestmentsInAffiliates" abstract="false" name="GainsLossesOnChangesInInvestmentsInAffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_TypeOfSharePriceAxis" abstract="true" name="TypeOfSharePriceAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_TypeOfSharePriceDomain" abstract="true" name="TypeOfSharePriceDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_PeerGroupMember" abstract="true" name="PeerGroupMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_PercentOfShareBasedAwardAvailableForGrantLimitOnIncrease" abstract="false" name="PercentOfShareBasedAwardAvailableForGrantLimitOnIncrease" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="f_GrantDateFairValue" abstract="false" name="GrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="f_PeriodUsedInExpectedVolatilityCalculations" abstract="false" name="PeriodUsedInExpectedVolatilityCalculations" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionNonvestedExpirationPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionNonvestedExpirationPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionFullyVestedExpirationPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionFullyVestedExpirationPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_IncomeTaxesTable" abstract="true" name="IncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_OperatingLossCarryforwardsAxis" abstract="true" name="OperatingLossCarryforwardsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_OperatingLossCarryforwardsDomain" abstract="true" name="OperatingLossCarryforwardsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_OperatingLossCarryforwardNotSubjectToExpirationMember" abstract="true" name="OperatingLossCarryforwardNotSubjectToExpirationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_IncomeTaxesLineItems" abstract="true" name="IncomeTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="f_EffectiveIncomeTaxRateReconciliationNontaxableForeignCurrencyGainsAndLosses" abstract="false" name="EffectiveIncomeTaxRateReconciliationNontaxableForeignCurrencyGainsAndLosses" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="f_EffectiveIncomeTaxRateReconciliationForeignOperationsTaxedInUnitedStates" abstract="false" name="EffectiveIncomeTaxRateReconciliationForeignOperationsTaxedInUnitedStates" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="f_EffectiveIncomeTaxRateReconciliationExportIncentivesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationExportIncentivesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="f_DeferredTaxAssetsForeignOther" abstract="false" name="DeferredTaxAssetsForeignOther" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DeferredTaxLiabilitiesOtherForeign" abstract="false" name="DeferredTaxLiabilitiesOtherForeign" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_UnrecognizedTaxBenefitsInterestOnIncomeTaxesReceivable" abstract="false" name="UnrecognizedTaxBenefitsInterestOnIncomeTaxesReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_TaxCreditCarryforwardRemainingCarryforwardPeriod" abstract="false" name="TaxCreditCarryforwardRemainingCarryforwardPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_ChangeInDeferredTaxNotRecognizedUndistributedEarningsOfForeignSubsidiariesDueToRestructuring" abstract="false" name="ChangeInDeferredTaxNotRecognizedUndistributedEarningsOfForeignSubsidiariesDueToRestructuring" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_StockVotingPowerPercentage" abstract="false" name="StockVotingPowerPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="f_FirstLiquidationRightAmountAvailableForDistributionPerShare" abstract="false" name="FirstLiquidationRightAmountAvailableForDistributionPerShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="f_SecondLiquidationRightAmountAvailableForDistributionPerShare" abstract="false" name="SecondLiquidationRightAmountAvailableForDistributionPerShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="f_ThirdLiquidationRightAmountAvailableForDistributionPerShare" abstract="false" name="ThirdLiquidationRightAmountAvailableForDistributionPerShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="f_OthermarketablesecuritiesMember" abstract="true" name="OthermarketablesecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_CashCashEquivalentsandRestrictedCashAbstract" abstract="true" name="CashCashEquivalentsandRestrictedCashAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="f_SecuritizationTransactionsVIEPrimaryBeneficiaryandNonVIEPrimaryBeneficiaryMember" abstract="true" name="SecuritizationTransactionsVIEPrimaryBeneficiaryandNonVIEPrimaryBeneficiaryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_RetailInstallmentContractsMember" abstract="true" name="RetailInstallmentContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_WholesaleAndDealerLoansMember" abstract="true" name="WholesaleAndDealerLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FinanceReceivableBeforeUnearnedInterestSupplements" abstract="false" name="FinanceReceivableBeforeUnearnedInterestSupplements" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_RelatedPartyTransactionUnearnedInterestSupplementsFromTransactionsWithRelatedParty" abstract="false" name="RelatedPartyTransactionUnearnedInterestSupplementsFromTransactionsWithRelatedParty" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_FinanceReceivablesNetSubjectToFairValue" abstract="false" name="FinanceReceivablesNetSubjectToFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_ThresholdPeriodForPastDueFinanceReceivables" abstract="false" name="ThresholdPeriodForPastDueFinanceReceivables" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_WholesaleLoansPercentageOfDealerFinancing" abstract="false" name="WholesaleLoansPercentageOfDealerFinancing" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="f_DefinitionOfProbable" abstract="false" name="DefinitionOfProbable" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="f_FinanceLeasesAbstract" abstract="true" name="FinanceLeasesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="f_UncollectedInterestReceivableExcludedFromFinanceReceivable" abstract="false" name="UncollectedInterestReceivableExcludedFromFinanceReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_SalesTypeandDirectFinancingLeaseNetInvestmentinLease" abstract="false" name="SalesTypeandDirectFinancingLeaseNetInvestmentinLease" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_SalesTypeandDirectFinancingLeaseGross" abstract="false" name="SalesTypeandDirectFinancingLeaseGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_FinancingReceivables31to60DaysPastdueMember" abstract="true" name="FinancingReceivables31to60DaysPastdueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FinancingReceivablesGreaterthan120DaysPastdueMember" abstract="true" name="FinancingReceivablesGreaterthan120DaysPastdueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FinancingReceivables61to120DaysPastdueMember" abstract="true" name="FinancingReceivables61to120DaysPastdueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FinancingReceivableGreaterThan30DaysPastDueMember" abstract="true" name="FinancingReceivableGreaterThan30DaysPastDueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DealerLoansMember" abstract="true" name="DealerLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_InternallyAssignedGradeGroupIVMember" abstract="true" name="InternallyAssignedGradeGroupIVMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_InternallyAssignedGradeGroupIMember" abstract="true" name="InternallyAssignedGradeGroupIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_InternallyAssignedGradeGroupIIMember" abstract="true" name="InternallyAssignedGradeGroupIIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_InternallyAssignedGradeGroupIIIMember" abstract="true" name="InternallyAssignedGradeGroupIIIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FinancingReceivablePercentOfDealerFinanceReceivables" abstract="false" name="FinancingReceivablePercentOfDealerFinanceReceivables" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="f_FinancingReceivablePercentOfConsumerFinanceReceivables" abstract="false" name="FinancingReceivablePercentOfConsumerFinanceReceivables" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="f_FinancingReceivableTotalPastDueMember" abstract="true" name="FinancingReceivableTotalPastDueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FinanceReceivablesCreditQualityRatingsTermRange" abstract="false" name="FinanceReceivablesCreditQualityRatingsTermRange" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_NonAccrualOfFinancingRevenue" abstract="false" name="NonAccrualOfFinancingRevenue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_FinancingReceivableAllowanceForCreditLossesOther" abstract="false" name="FinancingReceivableAllowanceForCreditLossesOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_LandPlantAndEquipmentExcludingSpecialToolsMember" abstract="true" name="LandPlantAndEquipmentExcludingSpecialToolsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DepreciationDepletionandAmortizationIncludingImpairment" abstract="false" name="DepreciationDepletionandAmortizationIncludingImpairment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_BlueOvalSKLLCMember" abstract="true" name="BlueOvalSKLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FordOtomotivSanayiAnonimSirketiMember" abstract="true" name="FordOtomotivSanayiAnonimSirketiMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_JianglingMotorsCorporationLimitedMember" abstract="true" name="JianglingMotorsCorporationLimitedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_ChanganFordAutomobileCorporationLimitedMember" abstract="true" name="ChanganFordAutomobileCorporationLimitedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_AutoAllianceThailandCo.LtdMember" abstract="true" name="AutoAllianceThailandCo.LtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FfsFinanceSouthAfricaPtyLtdMember" abstract="true" name="FfsFinanceSouthAfricaPtyLtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_IonityGmbHMember" abstract="true" name="IonityGmbHMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_OtherEquityInvestmentsMember" abstract="true" name="OtherEquityInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_EquityMethodInvestmentCommittedCapitalAmount" abstract="false" name="EquityMethodInvestmentCommittedCapitalAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_EquityMethodInvestmentCommittedCapitalExpectedTimingOfSatisfactionPeriod" abstract="false" name="EquityMethodInvestmentCommittedCapitalExpectedTimingOfSatisfactionPeriod" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_ArgoAIMember" abstract="true" name="ArgoAIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_RelatedPartyTransactionSalestoRelatedParty" abstract="false" name="RelatedPartyTransactionSalestoRelatedParty" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DealerAndDealersCustomerAllowancesAndClaims" abstract="false" name="DealerAndDealersCustomerAllowancesAndClaims" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_OtherPostretirementDefinedBenefitPlanLiabilitiesCurrent" abstract="false" name="OtherPostretirementDefinedBenefitPlanLiabilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DealerAndDealersCustomerAllowancesAndClaimsNoncurrent" abstract="false" name="DealerAndDealersCustomerAllowancesAndClaimsNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_UnitedStatesPensionPlanUSEntityServiceCostMember" abstract="true" name="UnitedStatesPensionPlanUSEntityServiceCostMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_ForeignPensionPlanServiceCostMember" abstract="true" name="ForeignPensionPlanServiceCostMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_UnitedStatesPensionPlanUSEntityInterestCostMember" abstract="true" name="UnitedStatesPensionPlanUSEntityInterestCostMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_ForeignPensionPlanInterestCostMember" abstract="true" name="ForeignPensionPlanInterestCostMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_OtherPostretirementBenefitPlanServiceCostMember" abstract="true" name="OtherPostretirementBenefitPlanServiceCostMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_OtherPostretirementBenefitPlanInterestCostMember" abstract="true" name="OtherPostretirementBenefitPlanInterestCostMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DefinedBenefitPlanNetPeriodicBenefitCostCreditGainLossDueToSettlementCurtailmentAndOther" abstract="false" name="DefinedBenefitPlanNetPeriodicBenefitCostCreditGainLossDueToSettlementCurtailmentAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DefinedBenefitPlanNetPeriodicBenefitCostCreditGainLossDueToCurtailmentsAndOther" abstract="false" name="DefinedBenefitPlanNetPeriodicBenefitCostCreditGainLossDueToCurtailmentsAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_AlternativesMember" abstract="true" name="AlternativesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DefinedBenefitPlanContributionsbyPlanParticipantsNetofCertainAdjustments" abstract="false" name="DefinedBenefitPlanContributionsbyPlanParticipantsNetofCertainAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DefinedBenefitPlanBenefitsPaidChangeInPlanAssetsNetOfCertainAdjustments" abstract="false" name="DefinedBenefitPlanBenefitsPaidChangeInPlanAssetsNetOfCertainAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DefinedBenefitPlanOtherIncreaseDecreasePlanAssets" abstract="false" name="DefinedBenefitPlanOtherIncreaseDecreasePlanAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DefinedBenefitPlanNetAssetsForPlanBenefitsCurrentAndNoncurrent" abstract="false" name="DefinedBenefitPlanNetAssetsForPlanBenefitsCurrentAndNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_PensionAndOtherPostretirementDefinedBenefitPlansNetLiabilitiesCurrentAndNoncurrent" abstract="false" name="PensionAndOtherPostretirementDefinedBenefitPlansNetLiabilitiesCurrentAndNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DefinedBenefitPlanPensionPlanWithProjectedBenefitsObligationsInExcessOfPlanAssetsAggregateFairValueOfPlanAssets" abstract="false" name="DefinedBenefitPlanPensionPlanWithProjectedBenefitsObligationsInExcessOfPlanAssetsAggregateFairValueOfPlanAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_PensionAndOtherPostretirementBenefitContributionsUnfundedPlans" abstract="false" name="PensionAndOtherPostretirementBenefitContributionsUnfundedPlans" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_PensionAndOtherPostretirementExpectedBenefitContributionsUnfundedPlans" abstract="false" name="PensionAndOtherPostretirementExpectedBenefitContributionsUnfundedPlans" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_FordWerkeGmbhMember" abstract="true" name="FordWerkeGmbhMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FordWerkeGmbHAndOtherMember" abstract="true" name="FordWerkeGmbHAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_DefinedBenefitPlanFixedIncomeMember" abstract="true" name="DefinedBenefitPlanFixedIncomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FixedIncomeFundsCommingledFundsMember" abstract="true" name="FixedIncomeFundsCommingledFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_CashCashEquivalentsAndRepurchaseAgreementsMember" abstract="true" name="CashCashEquivalentsAndRepurchaseAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_OtherPensionBenefitPlanAssetMemberMember" abstract="true" name="OtherPensionBenefitPlanAssetMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_OtherPensionBenefitPlanAssetInsuranceContractsMember" abstract="true" name="OtherPensionBenefitPlanAssetInsuranceContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_CashCashEquivalentsAndRepurchaseAgreementsTypeAxis" abstract="true" name="CashCashEquivalentsAndRepurchaseAgreementsTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_CashCashEquivalentsAndRepurchaseAgreementsTypeDomain" abstract="true" name="CashCashEquivalentsAndRepurchaseAgreementsTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DefinedBenefitPlanPercentOfEmployerAndRelatedPartySecuritiesIncludedInPlanAssetsMaximum" abstract="false" name="DefinedBenefitPlanPercentOfEmployerAndRelatedPartySecuritiesIncludedInPlanAssetsMaximum" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="f_DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationExpectedLongTermReturnOnAssetsRate" abstract="false" name="DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationExpectedLongTermReturnOnAssetsRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="f_DefinedBenefitPlanFairValueOfPlanAssetsDividendsAndInterestReceivable" abstract="false" name="DefinedBenefitPlanFairValueOfPlanAssetsDividendsAndInterestReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DefinedBenefitPlanPlanAssetsInvestmentWithinPlanAssetCategory" abstract="false" name="DefinedBenefitPlanPlanAssetsInvestmentWithinPlanAssetCategory" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisReturnOnPlanAssetsAttributableToAssetsHeld" abstract="false" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisReturnOnPlanAssetsAttributableToAssetsHeld" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetGainLossAttributableToAssetsSold" abstract="false" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetGainLossAttributableToAssetsSold" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_FinanceLeaseRightofUseAssetGross" abstract="false" name="FinanceLeaseRightofUseAssetGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_FinanceLeaseRightofUseAssetAccumulatedDepreciation" abstract="false" name="FinanceLeaseRightofUseAssetAccumulatedDepreciation" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_LesseeTermOfContract" abstract="false" name="LesseeTermOfContract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_RightOfUseLeaseAssetsTermOfContract" abstract="false" name="RightOfUseLeaseAssetsTermOfContract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="f_LesseeFinanceLeaseLeaseNotyetCommencedFuturePayments" abstract="false" name="LesseeFinanceLeaseLeaseNotyetCommencedFuturePayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_UKExportFinanceProgramMember" abstract="true" name="UKExportFinanceProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_A61InterestNotesDueAugust192032Member" abstract="true" name="A61InterestNotesDueAugust192032Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_CorporateCreditFacilityMember" abstract="true" name="CorporateCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_A364DayRevolvingFacilityMember" abstract="true" name="A364DayRevolvingFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_LineOfCreditFacilityDateMaturingAxis" abstract="true" name="LineOfCreditFacilityDateMaturingAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_LineOfCreditFacilityDateMaturingDomain" abstract="true" name="LineOfCreditFacilityDateMaturingDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FordOfBritainMember" abstract="true" name="FordOfBritainMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_AdjustmentFairValueHedgingInstrumentsUnsecuredDebtCurrent" abstract="false" name="AdjustmentFairValueHedgingInstrumentsUnsecuredDebtCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_AdjustmentFairValueHedgingInstrumentsUnsecuredDebtNoncurrent" abstract="false" name="AdjustmentFairValueHedgingInstrumentsUnsecuredDebtNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DebtCarryingValueFairValue" abstract="false" name="DebtCarryingValueFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_AdjustmentFairValueHedgingInstrumentsUnsecuredDebtDiscontinuedHedgingRelationships" abstract="false" name="AdjustmentFairValueHedgingInstrumentsUnsecuredDebtDiscontinuedHedgingRelationships" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_ZeroPercentConvertibleSeniorNotesDue2026Member" abstract="true" name="ZeroPercentConvertibleSeniorNotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_A930NotesDueMarch12030Member" abstract="true" name="A930NotesDueMarch12030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_A325NotesDueFebruary122032Member" abstract="true" name="A325NotesDueFebruary122032Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueNovember152025Member" abstract="true" name="DebenturesDueNovember152025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueAugust12026Member" abstract="true" name="DebenturesDueAugust12026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_NotesDueDecember82026Member" abstract="true" name="NotesDueDecember82026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueFebruary152028Member" abstract="true" name="DebenturesDueFebruary152028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueOctober12028Member" abstract="true" name="DebenturesDueOctober12028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueFebruary12029Member" abstract="true" name="DebenturesDueFebruary12029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_A9625NotesDueApril222030Member" abstract="true" name="A9625NotesDueApril222030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_GloblsDueJuly162031Member" abstract="true" name="GloblsDueJuly162031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueJanuary152032Member" abstract="true" name="DebenturesDueJanuary152032Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueFebruary152032Member" abstract="true" name="DebenturesDueFebruary152032Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_NotesDueJanuary152043Member" abstract="true" name="NotesDueJanuary152043Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueJune152043Member" abstract="true" name="DebenturesDueJune152043Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueNovember12046Member" abstract="true" name="DebenturesDueNovember12046Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_NotesDueDecember82046Member" abstract="true" name="NotesDueDecember82046Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueFebruary152047Member" abstract="true" name="DebenturesDueFebruary152047Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_NotesDueJune12059Member" abstract="true" name="NotesDueJune12059Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_NotesDueDecember12059Member" abstract="true" name="NotesDueDecember12059Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebenturesDueMay152097Member" abstract="true" name="DebenturesDueMay152097Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_ZeroPercentConvertibleSeniorNotesDue2026OverAllotmentOptionMember" abstract="true" name="ZeroPercentConvertibleSeniorNotesDue2026OverAllotmentOptionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_NotesDueAugust152062Member" abstract="true" name="NotesDueAugust152062Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_CreditFacilityFeatureAxis" abstract="true" name="CreditFacilityFeatureAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_CreditFacilityFeatureDomain" abstract="true" name="CreditFacilityFeatureDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_SupplementalCreditFacilityMember" abstract="true" name="SupplementalCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_LocalcreditfacilitiesMember" abstract="true" name="LocalcreditfacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_April262026Member" abstract="true" name="April262026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_April222027Member" abstract="true" name="April222027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_April262028Member" abstract="true" name="April262028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_April202029Member" abstract="true" name="April202029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_August212025Member" abstract="true" name="August212025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_CreditFacilityGuaranteeByThirdPartyAmount" abstract="false" name="CreditFacilityGuaranteeByThirdPartyAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_MediumTermNotesNoncurrentCumulative" abstract="false" name="MediumTermNotesNoncurrentCumulative" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DebtCovenantMinimumLiquidityAmount" abstract="false" name="DebtCovenantMinimumLiquidityAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_CashContributionCollateralToSupportWholesaleSecuritizationProgram" abstract="false" name="CashContributionCollateralToSupportWholesaleSecuritizationProgram" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_CashBalanceToSupportWholesaleSecuritizationProgram" abstract="false" name="CashBalanceToSupportWholesaleSecuritizationProgram" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_DebtInstrumentConvertibleTermsOfConversionAxis" abstract="true" name="DebtInstrumentConvertibleTermsOfConversionAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_DebtInstrumentConvertibleTermsOfConversionDomain" abstract="true" name="DebtInstrumentConvertibleTermsOfConversionDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebtConversionTermsOneMember" abstract="true" name="DebtConversionTermsOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebtConversionTermsTwoMember" abstract="true" name="DebtConversionTermsTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_DebtInstrumentConvertibleThresholdPercentageOfStockTradingPrice" abstract="false" name="DebtInstrumentConvertibleThresholdPercentageOfStockTradingPrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="f_ImpactOfConvertibleSecuritiesOnDilutedEarningsPerShare" abstract="false" name="ImpactOfConvertibleSecuritiesOnDilutedEarningsPerShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="f_RestructuringIncurredCostStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" abstract="false" name="RestructuringIncurredCostStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_FordNextMember" abstract="true" name="FordNextMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_InvestmentNameAxis" abstract="true" name="InvestmentNameAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_InvestmentNameDomain" abstract="true" name="InvestmentNameDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FordOtosanMember" abstract="true" name="FordOtosanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_SaleLeasebackTransactionAssetsAndLiabilitiesRemainingAfterSale" abstract="false" name="SaleLeasebackTransactionAssetsAndLiabilitiesRemainingAfterSale" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansNetPriorServiceCostsCreditArisingDuringPeriodTax" abstract="false" name="OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansNetPriorServiceCostsCreditArisingDuringPeriodTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_OtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansTaxexcludinggainsandlossesarisingduringperiod" abstract="false" name="OtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansTaxexcludinggainsandlossesarisingduringperiod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_OtherComprehensiveIncomeTranslationImpactOnNonUSPlansNetOfTax" abstract="false" name="OtherComprehensiveIncomeTranslationImpactOnNonUSPlansNetOfTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_EquityMethodInvestmentCommittedCapitalExpectingTimingOfSatisfactionStartDateAxis" abstract="true" name="EquityMethodInvestmentCommittedCapitalExpectingTimingOfSatisfactionStartDateAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_EquityMethodInvestmentCommittedCapitalExpectingTimingOfSatisfactionStartDateDomain" abstract="true" name="EquityMethodInvestmentCommittedCapitalExpectingTimingOfSatisfactionStartDateDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_U.S.DepartmentOfEnergyDoEMember" abstract="true" name="U.S.DepartmentOfEnergyDoEMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_LineOfCreditFacilityEnteredIntoByEquityMethodInvestee" abstract="false" name="LineOfCreditFacilityEnteredIntoByEquityMethodInvestee" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_FieldServiceActionsAndCustomerServiceActionsMember" abstract="true" name="FieldServiceActionsAndCustomerServiceActionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_FordBlueMember" abstract="true" name="FordBlueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_FordModelEMember" abstract="true" name="FordModelEMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_FordProMember" abstract="true" name="FordProMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_FordModelEAndFordBlueMember" abstract="true" name="FordModelEAndFordBlueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_SegmentReconcilingItemsAxis" abstract="true" name="SegmentReconcilingItemsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="f_InterestonDebtDomain" abstract="true" name="InterestonDebtDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_InterestonDebtMember" abstract="true" name="InterestonDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_SpecialItemsMember" abstract="true" name="SpecialItemsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_IntersegmentRevenues" abstract="false" name="IntersegmentRevenues" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_TotalRevenues" abstract="false" name="TotalRevenues" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_PaymentsToAcquireProductiveAssetsSpendingAttributableToElectricVehicles" abstract="false" name="PaymentsToAcquireProductiveAssetsSpendingAttributableToElectricVehicles" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_SupplierAndOtherContractCancellationExpenses" abstract="false" name="SupplierAndOtherContractCancellationExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="f_OtherGeographicalMember" abstract="true" name="OtherGeographicalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="f_SECSchedule1209ValuationAllowanceDeferredTaxAssetUSBranchOperationsMember" abstract="true" name="SECSchedule1209ValuationAllowanceDeferredTaxAssetUSBranchOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="f_AndrewFrickMember" abstract="true" name="AndrewFrickMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

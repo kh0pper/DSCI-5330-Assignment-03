@@ -23,6 +23,7 @@
 - Current data assets: Ford Pro Intelligence, FordPass usage, connected vehicle data, CRM/dealer systems.
 - BI enhancements: unified dashboards, lifestyle persona tracking, real-time campaign/charging analytics, customer sentiment loops; include human capital plan to upskill marketing and dealer teams (addressing Industry 4.0 skills gap).
 - Governance: cross-functional intelligence council, data quality standards, ethical AI guardrails, training roadmap.
+- Digital pulse: leverage Google Trends (Ready Set Ford searches spiking in mid-Sep 2025) and Twitter listening (25 recent posts, hashtags #Ford/#ReadySetFord/#Mustang) to monitor awareness and feedback in near real time.
 
 ## 6. Recommendations & Roadmap
 - Short-term (0–90 days): refine campaign measurement, capture telematics/charging insights into marketing assets, launch qualitative pulse checks, build KPI starter dashboards.
