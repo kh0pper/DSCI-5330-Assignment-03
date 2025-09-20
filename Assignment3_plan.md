@@ -70,3 +70,8 @@
 ### Stand-up Log
 - **22 Sep (async, 09:30 CT):** Focus on primary research outline, memo drafting kickoff, visual prototypes. Owners: Analysts/Writers (research + memo), Data Visualizers (Google Trends/social), Data Collectors (data refresh status). Blockers: awaiting confirmation on access to class readings for citations. Responses logged 22 Sep 14:00 CT.
 - **22 Sep (15:30 CT follow-up):** Coordinator pinged Analysts/Writers to confirm citation access for class readings; Analysts confirmed class summaries in `notes/research_notes.md` are sufficient for interim citations.
+
+### Follow-up Tasks
+- **Analysts/Writers:** Integrate quantitative comparisons from `data/external/historic_campaigns.csv` into memo recommendations (e.g., highlight Go Further vs. Ready Set Ford recall delta). **Due:** 24 Sep.
+- **Deck Steward:** Build a visual or callout for the Campaign Benchmarks slide (bar chart, heat map, or callouts) before next export; leverage speaker notes in `deck/slide_campaign_benchmarks.md`. **Due:** 24 Sep.
+- **Project Coordinator:** Confirm historic benchmark requirements are logged in the dashboard backlog and schedule final sign-offs. **Due:** 24 Sep.
