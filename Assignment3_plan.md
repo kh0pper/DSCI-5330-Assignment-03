@@ -30,7 +30,8 @@
    - Slides: emphasize lifestyle storytelling, intelligence roadmap, quick wins/long-term roadmap.
 
 ## Immediate Next Actions
-- [ ] Extract key frameworks/examples from class notes into `notes/research_notes.md` (Marketing Intelligence section).
+- [x] Extract key frameworks/examples from class notes into `notes/research_notes.md` (Marketing Intelligence section).
 - [ ] Deepen secondary research on marketing intelligence applications in automotive (e.g., competitor case studies, syndicated data references).
 - [ ] Outline primary research recommendations (qual vs quant) to validate Ready Set Ford positioning.
 - [ ] Begin drafting memo sections with new structure; expand slide outline accordingly.
+- [ ] Build campaign visuals (financial trends, Google Trends, social listening highlights) for slide deck.

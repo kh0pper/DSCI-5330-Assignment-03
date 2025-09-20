@@ -51,3 +51,7 @@
 ## Digital Signals (Sept 2025)
 - Google Trends (US): interest in "Ready Set Ford" registered its first measurable activity mid-September 2025 (latest weekly index = 1 versus a long-run average near 0), while "Ford Pro" remains consistently searched (average index ~30, peak 100).
 - Twitter/X sample (25 posts, Sept 13-19, 2025): top hashtags include #Ford, #ReadySetFord, #Mustang, #SwapYourRide, #PlanetFord; content mixes campaign excitement with dealer promotions and service feedback.
+
+## Financial Snapshot (2024 vs 2023)
+- Revenue climbed to $185B (+5% YoY), while advertising spend declined to $2.8B (-9.7%), signalling tighter paid media outlays despite topline growth (data/sec/ford_metrics_wide.csv).
+- SG&A fell to $10.9B (-8.6% YoY), freeing funds to reinvest in marketing intelligence systems and customer experience initiatives.
