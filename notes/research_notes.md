@@ -29,12 +29,14 @@
 1. Quantify marketing/advertising spend trends and promotional efficiency from Ford’s 10-K footnotes (and latest 10-Q once available).
 2. Map “Ready, Set, Ford” lifestyle pillars to segment KPIs (Blue, Model e, Pro) to evaluate effectiveness and identify BI signals required to monitor each pillar.
 3. Draft memo outline tying together internal performance data, campaign narrative, and BI opportunities; begin sourcing visuals for presentation deck.
+4. Incorporate historic campaign benchmarks (2012 “Go Further”, 2025 “From America, For America”) from `data/external/historic_campaigns.csv` to compare against Ready Set Ford performance.
 
 ## Data Refresh Log – 22 Sep 2025
 - Google Trends series regenerated; `Ford Pro` baseline trended 1 point lower on most historical weeks, signaling minor normalization rather than directional shift (data/external/google_trends_readysetford_us.csv).
 - YouTube metrics summary refreshed; no material change in total views or engagement across six Ready Set Ford uploads (data/external/youtube_metrics.csv).
 - Market stats extract reran with 10 rows (no new sources); ready for visual updates in deck.
 - Visual assets exported for deck: Google Trends line chart, hashtag bar chart, and financial trend lines (`deck/visuals/`).
+- Historic campaign table (`data/external/historic_campaigns.csv`) records 2012 “Go Further” and 2025 “From America, For America” benchmarks for Ready Set Ford storytelling.
 
 ## Source Links
 - 2024 Form 10-K (filed Feb 6, 2025): https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/f-20241231x10k.htm

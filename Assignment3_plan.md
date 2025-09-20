@@ -48,7 +48,8 @@
 - **Analysts/Writers:**
   - Draft Ready Set Ford primary research roadmap (qual + quant) and plug into memo Section 3. Work off existing outline, cite sources `(notes/<file>:line)` style.
   - Begin Executive Summary and Strategic Context paragraphs in `memo/memo_draft.md`, aligning KPIs with loyalty + campaign narratives.
-  - **Status 22 Sep:** Roadmap drafted in `memo/memo_draft_sections.md`; Sections 4–6 refreshed with digital pulse citations.
+  - Leverage `data/external/historic_campaigns.csv` to compare Ready Set Ford against Go Further and From America, For America milestones.
+  - **Status 22 Sep:** Roadmap drafted in `memo/memo_draft_sections.md`; Sections 4–6 refreshed with digital pulse + historic campaign citations.
 - **Data Visualizers:**
   - Prototype refreshed Google Trends and social listening visuals; store outputs in `deck/visuals/` with rendering notes.
   - Coordinate with Deck Steward on layout needs; ensure scripts or notebooks have usage comments.
@@ -62,8 +63,8 @@
 
 ### Final QA Checklist (Coordinator)
 - [ ] Confirm memo citations trace to `notes/` files or refreshed datasets.
-- [ ] Verify deck slide numbering and embedded visuals render in `Ready_Set_Ford_deck.pptx`.
-- [ ] Spot-check data tables (loyalty, digital pulse, financial trends) against latest CSVs.
+- [x] Verify deck slide numbering and embedded visuals render in `Ready_Set_Ford_deck.pptx` (22 Sep check).
+- [x] Spot-check data tables (loyalty, digital pulse, financial trends) against latest CSVs (`market_stats`, `google_trends`, `youtube_metrics`).
 - [ ] Capture final sign-offs from Analysts/Writers, Deck Steward, and Maintainers ahead of submission.
 
 ### Stand-up Log

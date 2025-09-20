@@ -12,6 +12,7 @@
 10. **Digital Pulse – Trends & Social** – Upcoming slides generated from Google Trends and Twitter datasets.
     - View: Ready Set Ford vs Ford Pro weekly indices (post-22 Sep normalization) sourced from `data/external/google_trends_readysetford_us.csv` with visual `deck/visuals/google_trends_readysetford_us.png`.
     - Sentiment snapshot: 25-post X/Twitter sample with hashtag mix, key themes, and dealer amplification notes (`data/external/twitter_readysetford_summary.json`) with visual `deck/visuals/twitter_readysetford_top_hashtags.png`.
+10a. **Campaign Benchmarks – Historical Context** – Table from `data/external/historic_campaigns.csv` comparing Go Further (2012), From America, For America (2025), and Ready Set Ford KPI baselines.
 11. **Ford Pro Proof Points** – ServiceTitan + managed charging metrics from scripts/process_press_releases outputs.
 12. **BI Roadmap & Next Steps** – Dashboard mockup, talent plan, 90/180/365-day actions.
 
