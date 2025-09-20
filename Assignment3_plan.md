@@ -56,10 +56,10 @@
 - **Deck Steward Agent:**
   - Integrate new visuals and research bullets into slide Markdown modules; update `deck/deck_outline.md` change log.
   - Plan to regenerate PPTX after Analysts deliver revised narrative (target 25 Sep) using `pandoc deck/*.md -o deck/Ready_Set_Ford_deck.pptx`.
-  - **Status 22 Sep:** Slides now reference `deck/visuals/` PNGs; awaiting final narrative sign-off before next `pandoc` export.
+  - **Status 22 Sep:** Slides now reference `deck/visuals/` PNGs; `pandoc deck/*.md -o deck/Ready_Set_Ford_deck.pptx` rerun after visual refresh.
 - **Maintainers:**
   - Run `git status` and check for large binaries or permission drifts after data refresh. Document hygiene notes in `Assignment3_plan.md` or `notes/research_notes.md` as needed.
 
 ### Stand-up Log
 - **22 Sep (async, 09:30 CT):** Focus on primary research outline, memo drafting kickoff, visual prototypes. Owners: Analysts/Writers (research + memo), Data Visualizers (Google Trends/social), Data Collectors (data refresh status). Blockers: awaiting confirmation on access to class readings for citations. Responses logged 22 Sep 14:00 CT.
-- **22 Sep (15:30 CT follow-up):** Coordinator pinged Analysts/Writers to confirm citation access for class readings; awaiting reply before locking memo references (carry forward to 23 Sep stand-up).
+- **22 Sep (15:30 CT follow-up):** Coordinator pinged Analysts/Writers to confirm citation access for class readings; Analysts confirmed class summaries in `notes/research_notes.md` are sufficient for interim citations.
