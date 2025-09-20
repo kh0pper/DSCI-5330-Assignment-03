@@ -30,6 +30,12 @@
 2. Map “Ready, Set, Ford” lifestyle pillars to segment KPIs (Blue, Model e, Pro) to evaluate effectiveness and identify BI signals required to monitor each pillar.
 3. Draft memo outline tying together internal performance data, campaign narrative, and BI opportunities; begin sourcing visuals for presentation deck.
 
+## Data Refresh Log – 22 Sep 2025
+- Google Trends series regenerated; `Ford Pro` baseline trended 1 point lower on most historical weeks, signaling minor normalization rather than directional shift (data/external/google_trends_readysetford_us.csv).
+- YouTube metrics summary refreshed; no material change in total views or engagement across six Ready Set Ford uploads (data/external/youtube_metrics.csv).
+- Market stats extract reran with 10 rows (no new sources); ready for visual updates in deck.
+- Visual assets exported for deck: Google Trends line chart, hashtag bar chart, and financial trend lines (`deck/visuals/`).
+
 ## Source Links
 - 2024 Form 10-K (filed Feb 6, 2025): https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/f-20241231x10k.htm
 - 2024 Annual Report (Ford investor relations): https://shareholder.ford.com/financials/annual-reports/default.aspx
@@ -51,7 +57,7 @@
 - TechXplore review of automotive Industry 4.0 skills gaps: warns that digital transformations falter without human capital investment; informs recommendations around BI governance, training, and dealer enablement.
 
 ## Digital Signals (Sept 2025)
-- Google Trends (US): interest in "Ready Set Ford" registered its first measurable activity mid-September 2025 (latest weekly index = 1 versus a long-run average near 0), while "Ford Pro" remains consistently searched (average index ~30, peak 100).
+- Google Trends (US): interest in "Ready Set Ford" registered its first measurable activity mid-September 2025 (latest weekly index = 1 versus a long-run average near 0), while "Ford Pro" demand remains steady (average index ~29 after today’s normalization, peak 100).
 - Twitter/X sample (25 posts, Sept 13-19, 2025): top hashtags include #Ford, #ReadySetFord, #Mustang, #SwapYourRide, #PlanetFord; content mixes campaign excitement with dealer promotions and service feedback.
 - YouTube (official uploads): 60-second anthem (24.5K views/503 likes as of run) and alternate cut (611 views/13 likes) provide early viewership benchmarks; short-form clips still pending due to access limits.
 

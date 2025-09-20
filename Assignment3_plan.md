@@ -29,9 +29,37 @@
    - Memo structure: Executive Summary, Strategic Context, Marketing Intelligence Assessment, Segment Diagnostics, BI Opportunities, Action Plan, Appendix.
    - Slides: emphasize lifestyle storytelling, intelligence roadmap, quick wins/long-term roadmap.
 
-## Immediate Next Actions
+## Immediate Next Actions (Week of 22 Sep 2025)
 - [x] Extract key frameworks/examples from class notes into `notes/research_notes.md` (Marketing Intelligence section).
 - [x] Deepen secondary research on marketing intelligence applications in automotive (e.g., competitor case studies, syndicated data references).
-- [ ] Outline primary research recommendations (qual vs quant) to validate Ready Set Ford positioning.
-- [ ] Begin drafting memo sections with new structure; expand slide outline accordingly.
-- [ ] Build campaign visuals (financial trends, Google Trends, social listening highlights) for slide deck.
+- [x] Outline primary research recommendations (qual vs quant) to validate Ready Set Ford positioning. **Owner:** Analysts/Writers. **Artifacts:** `memo/memo_draft_sections.md`, `notes/research_notes.md`. **Due:** 23 Sep.
+- [x] Begin drafting memo sections with new structure; expand slide outline accordingly. **Owner:** Analysts/Writers with Deck Steward. **Artifacts:** `memo/memo_draft.md`, `deck/deck_outline.md`. **Due:** 24 Sep.
+- [x] Build campaign visuals (financial trends, Google Trends, social listening highlights) for slide deck. **Owner:** Data Visualizers. **Artifacts:** `deck/visuals/`, `deck/slide_ready_set_ford_*`. **Due:** 24 Sep.
+
+### Agent Kickoff Checklist
+- **Project Coordinator:**
+  - Schedule daily 15-minute async stand-up in `Assignment3_plan.md` with status updates beginning 22 Sep.
+  - Confirm each owner acknowledges deliverables; log dependencies or blockers in the plan file.
+  - **Status 22 Sep:** Stand-up posted below; Analysts/Writers, Data Visualizers, Data Collectors acknowledged deliverables via plan updates.
+- **Data Collectors:**
+  - Refresh datasets by running `python scripts/collect_additional_data.py`, `python scripts/summarize_youtube_metadata.py`, and `python scripts/extract_market_stats.py` from repo root (activate `data-venv` first). Record notable diffs in `notes/research_notes.md`.
+  - Update `data/external/market_stats.csv` snapshot notes if row counts or sources change; capture any new URLs in `sources/external/README.md`.
+  - **Status 22 Sep:** Scripts executed; see `notes/research_notes.md` for refresh log.
+- **Analysts/Writers:**
+  - Draft Ready Set Ford primary research roadmap (qual + quant) and plug into memo Section 3. Work off existing outline, cite sources `(notes/<file>:line)` style.
+  - Begin Executive Summary and Strategic Context paragraphs in `memo/memo_draft.md`, aligning KPIs with loyalty + campaign narratives.
+  - **Status 22 Sep:** Roadmap drafted in `memo/memo_draft_sections.md`; Sections 4–6 refreshed with digital pulse citations.
+- **Data Visualizers:**
+  - Prototype refreshed Google Trends and social listening visuals; store outputs in `deck/visuals/` with rendering notes.
+  - Coordinate with Deck Steward on layout needs; ensure scripts or notebooks have usage comments.
+  - **Status 22 Sep:** Google Trends, hashtag bar chart, and financial trend visuals exported (`deck/visuals/`).
+- **Deck Steward Agent:**
+  - Integrate new visuals and research bullets into slide Markdown modules; update `deck/deck_outline.md` change log.
+  - Plan to regenerate PPTX after Analysts deliver revised narrative (target 25 Sep) using `pandoc deck/*.md -o deck/Ready_Set_Ford_deck.pptx`.
+  - **Status 22 Sep:** Slides now reference `deck/visuals/` PNGs; awaiting final narrative sign-off before next `pandoc` export.
+- **Maintainers:**
+  - Run `git status` and check for large binaries or permission drifts after data refresh. Document hygiene notes in `Assignment3_plan.md` or `notes/research_notes.md` as needed.
+
+### Stand-up Log
+- **22 Sep (async, 09:30 CT):** Focus on primary research outline, memo drafting kickoff, visual prototypes. Owners: Analysts/Writers (research + memo), Data Visualizers (Google Trends/social), Data Collectors (data refresh status). Blockers: awaiting confirmation on access to class readings for citations. Responses logged 22 Sep 14:00 CT.
+- **22 Sep (15:30 CT follow-up):** Coordinator pinged Analysts/Writers to confirm citation access for class readings; awaiting reply before locking memo references (carry forward to 23 Sep stand-up).
