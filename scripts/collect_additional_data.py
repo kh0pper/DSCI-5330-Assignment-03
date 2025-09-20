@@ -35,8 +35,13 @@ TWARC_QUERY = "Ready Set Ford lang:en -is:retweet"
 TWARC_LIMIT = "200"  # string to pass to CLI
 
 YOUTUBE_URLS = [
-    # e.g. "https://www.youtube.com/watch?v=VIDEO_ID"
+    "https://www.youtube.com/watch?v=7qxMxXY8v18",
+    "https://www.youtube.com/watch?v=Iw77oanm0Ow",
+    "https://www.youtube.com/shorts/iUILn5NRtvU",
+    "https://www.youtube.com/watch?v=oMIxIBEeh1o",
+    "https://www.youtube.com/watch?v=QrlwWXer9rY",
 ]
+
 
 MARKET_STATS_CSV = EXTERNAL_DIR / "market_stats.csv"
 
