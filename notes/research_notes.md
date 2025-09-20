@@ -46,11 +46,14 @@
 ## Recent Industry Intelligence (Sept 2025)
 - Ford Pro + ServiceTitan integration (Contractor Magazine): highlights direct pipeline between vehicle telematics and service software, reducing setup time and surfacing fuel/maintenance insights—evidence Ford is monetizing data services that align with the campaign’s capability promise.
 - Southern Company & Ford Pro managed charging pilot (CBT News): demonstrates Ford Pro Intelligence enabling demand-response savings (0.5 MW during events) while maintaining uptime, providing proof points for the Build persona and EV ROI storytelling.
+- J.D. Power 2024 Brand Loyalty Study: Ford achieved a 65.1% loyalty rate among truck owners—highest in the study—underlining the brand’s core strength.
+- McKinsey Collectible Cars report (Feb 2025): niche segment valued at ~€800B with average auction prices around €65K, illustrating premium storytelling opportunities for heritage models.
 - TechXplore review of automotive Industry 4.0 skills gaps: warns that digital transformations falter without human capital investment; informs recommendations around BI governance, training, and dealer enablement.
 
 ## Digital Signals (Sept 2025)
 - Google Trends (US): interest in "Ready Set Ford" registered its first measurable activity mid-September 2025 (latest weekly index = 1 versus a long-run average near 0), while "Ford Pro" remains consistently searched (average index ~30, peak 100).
 - Twitter/X sample (25 posts, Sept 13-19, 2025): top hashtags include #Ford, #ReadySetFord, #Mustang, #SwapYourRide, #PlanetFord; content mixes campaign excitement with dealer promotions and service feedback.
+- YouTube metadata: Ready Set Ford campaign videos identified; retrieval pending due to network restrictions (yt-dlp blocked).
 
 ## Financial Snapshot (2024 vs 2023)
 - Revenue climbed to $185B (+5% YoY), while advertising spend declined to $2.8B (-9.7%), signalling tighter paid media outlays despite topline growth (data/sec/ford_metrics_wide.csv).
