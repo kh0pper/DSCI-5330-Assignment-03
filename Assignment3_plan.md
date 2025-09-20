@@ -60,6 +60,12 @@
 - **Maintainers:**
   - Run `git status` and check for large binaries or permission drifts after data refresh. Document hygiene notes in `Assignment3_plan.md` or `notes/research_notes.md` as needed.
 
+### Final QA Checklist (Coordinator)
+- [ ] Confirm memo citations trace to `notes/` files or refreshed datasets.
+- [ ] Verify deck slide numbering and embedded visuals render in `Ready_Set_Ford_deck.pptx`.
+- [ ] Spot-check data tables (loyalty, digital pulse, financial trends) against latest CSVs.
+- [ ] Capture final sign-offs from Analysts/Writers, Deck Steward, and Maintainers ahead of submission.
+
 ### Stand-up Log
 - **22 Sep (async, 09:30 CT):** Focus on primary research outline, memo drafting kickoff, visual prototypes. Owners: Analysts/Writers (research + memo), Data Visualizers (Google Trends/social), Data Collectors (data refresh status). Blockers: awaiting confirmation on access to class readings for citations. Responses logged 22 Sep 14:00 CT.
 - **22 Sep (15:30 CT follow-up):** Coordinator pinged Analysts/Writers to confirm citation access for class readings; Analysts confirmed class summaries in `notes/research_notes.md` are sufficient for interim citations.
