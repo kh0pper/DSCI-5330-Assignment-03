@@ -27,7 +27,7 @@
 ## Security & Configuration Tips
 - Keep API keys (Twitter/X bearer tokens) inside your local environment; never commit them. `collect_additional_data.py` expects credentials configured via `twarc2 configure` inside `data-venv`.
 - When downloading new data, append URLs to the appropriate README in `sources/` for traceability and cite them in `notes/research_notes.md`.
-## Role-Specific Instructions
 - **Data Collectors:** Run automation scripts inside `data-venv` (`python scripts/collect_additional_data.py`) and log any new sources in `sources/external/README.md` and `data/external/market_stats.csv`. Capture PDFs or text extracts for reproducibility.
 - **Analysts/Writers:** Update `notes/research_notes.md` with new insights (cite line references) before editing `Assignment3_memo_outline.md` or `Assignment3_plan.md`. Ensure figures trace back to `data/`.
 - **Maintainers:** Review commits for large binaries, ensure scripts remain executable (`chmod +x scripts/*.py`), and keep virtual-environment dependencies documented (`data-venv/requirements.txt` if expanded).
+- **Deck Steward Agent:** Own the `deck/` directory. Regenerate slide exports with `pandoc deck/*.md -o deck/Ready_Set_Ford_deck.pptx`, archive supporting imagery in `deck/visuals/`, rerun `scripts/summarize_youtube_metadata.py` + `scripts/build_digital_pulse_slides.py` for fresh metrics, and log major revisions or open needs in `deck/deck_outline.md` so writers stay aligned.
