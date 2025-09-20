@@ -12,15 +12,17 @@ Edit the configuration variables below to adjust keywords, file names, or API se
 from __future__ import annotations
 
 import csv
+import shutil
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import parse_qs, urlparse
 
 # ---------------------------------------------------------------------------
 # Configuration – adjust to taste
 # ---------------------------------------------------------------------------
 ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "DSCI-5330-Assignment-03" / "data"
+DATA_DIR = ROOT / "data"
 EXTERNAL_DIR = DATA_DIR / "external"
 
 GOOGLE_TRENDS_TERMS = [
@@ -134,16 +136,41 @@ def run_twarc_search() -> None:
         print(f"[WARN] twarc2 search failed: {exc}")
 
 
+def _sanitize_video_id(url: str) -> str:
+    parsed = urlparse(url)
+    query_ids = parse_qs(parsed.query).get("v")
+    if query_ids:
+        video_id = query_ids[0]
+    elif parsed.hostname and parsed.hostname.lower().endswith("youtu.be"):
+        video_id = parsed.path.strip("/")
+    elif "/shorts/" in parsed.path:
+        video_id = parsed.path.split("/shorts/")[-1].split("/")[0]
+    else:
+        video_id = parsed.path.rstrip("/").split("/")[-1]
+
+    safe_chars = [c for c in video_id if c.isalnum() or c in {"-", "_"}]
+    return "".join(safe_chars) or "video"
+
+
 def fetch_youtube_metadata() -> None:
     if not YOUTUBE_URLS:
         print("[INFO] No YouTube URLs configured. Skipping.")
         return
 
+    yt_dlp_binary = shutil.which("yt-dlp")
+    if yt_dlp_binary:
+        base_cmd = [yt_dlp_binary]
+    else:
+        base_cmd = [sys.executable, "-m", "yt_dlp"]
+
     for url in YOUTUBE_URLS:
-        video_id = url.split("v=")[-1]
+        video_id = _sanitize_video_id(url)
         out_path = EXTERNAL_DIR / f"youtube_{video_id}.json"
-        cmd = [
-            "yt-dlp",
+        if out_path.exists():
+            print(f"[INFO] YouTube metadata already present: {out_path.relative_to(ROOT)}")
+            continue
+
+        cmd = base_cmd + [
             "--skip-download",
             "--print-json",
             url,
@@ -154,9 +181,13 @@ def fetch_youtube_metadata() -> None:
             out_path.write_text(result.stdout)
             print(f"[OK] Saved YouTube metadata to {out_path.relative_to(ROOT)}")
         except FileNotFoundError:
-            print("[WARN] yt-dlp not found. Install via `pip install yt-dlp`. Skipping.")
+            print("[WARN] yt-dlp not found even after PATH check. Install via `pip install yt-dlp`. Skipping remaining URLs.")
             break
         except subprocess.CalledProcessError as exc:
+            stderr = exc.stderr.strip() if exc.stderr else ""
+            if "No module named" in stderr and "yt_dlp" in stderr:
+                print("[WARN] yt-dlp module not available. Install via `pip install yt-dlp`. Skipping remaining URLs.")
+                break
             print(f"[WARN] yt-dlp failed for {url}: {exc}")
 
 
